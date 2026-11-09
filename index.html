@@ -18,10 +18,10 @@
         <li><a href="#about" class="is-current">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#patents">Patents</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#patents">Patents</a></li> -->
         <li><a href="#experience">Experience</a></li>
         <li><a href="#awards">Awards</a></li>
+        <li><a href="#teaching">Teaching</a></li>
       </ul>
     </div>
   </nav>
@@ -40,10 +40,9 @@
           <a href="https://casyslab.kaist.ac.kr/">CASYS Lab</a>
         </p>
         <ul class="contact">
-          <li><a href="mailto:khoonchoi@kaist.ac.kr">khoonchoi@kaist.ac.kr</a></li>
-          <li><a href="#" class="todo-link">Google Scholar</a></li><!-- TODO: Scholar URL -->
-          <li><a href="#" class="todo-link">LinkedIn</a></li><!-- TODO: LinkedIn URL (없으면 삭제) -->
-          <li><a href="https://github.com/Kwanghoon-Choi">GitHub</a></li>
+          <li><a href="mailto:khchoi@casys.kaist.ac.kr">khchoi@casys.kaist.ac.kr</a></li>
+          <li><a href="https://scholar.google.com/citations?user=oxS-d-UAAAAJ">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/kwanghoon-choi-0a8609237/">LinkedIn</a></li>
           <li><a href="assets/cv.pdf" class="todo-link">CV</a></li><!-- TODO: assets/cv.pdf 업로드 -->
         </ul>
       </div>
@@ -57,18 +56,15 @@
         I am a Ph.D. student in the <a href="https://cs.kaist.ac.kr/">School of Computing at KAIST</a>,
         advised by Prof. <a href="https://jaehyuk-huh.github.io/">Jaehyuk Huh</a> at the
         <a href="https://casyslab.kaist.ac.kr/">Computer Architecture and Systems Lab (CASYS)</a>.
-        My research focuses on memory systems for data centers, with an emphasis on
-        CXL-based tiered memory and secure memory architecture.
-        <mark class="todo">TODO: 학부/석사 이력 한 문장 + bio 다듬기</mark>
+        My research focuses on memory systems, particularly CXL-based tiered memory and secure memory architecture. I am also working on processing-near-memory (PNM) to accelerate LLM inference.
       </p>
 
       <h3>Research Interests</h3>
-      <!-- TODO: 초안 4개. 3~4개로 확정 -->
       <ul class="interests">
-        <li>CXL-based Tiered and Disaggregated Memory Systems</li>
-        <li>Memory Management for Multi-tenant Systems</li>
-        <li>Secure Memory Architecture</li>
-        <li>Processing-in/near-Memory</li>
+        <li>CXL-based Tiered Memory Systems</li>
+        <li>Processing-Near-Memory (PNM) for LLM</li>
+        <li>Hardware-based Memory Security</li>
+        <li>LLM Agent Training</li>
       </ul>
     </section>
 
@@ -79,66 +75,112 @@
       <div class="entry">
         <div class="entry-head">
           <span class="entry-title">Korea Advanced Institute of Science and Technology (KAIST)</span>
-          <span class="entry-date"><mark class="todo">TODO: Mar. 20XX</mark> – Present</span>
+          <span class="entry-date">Mar. 2024</mark> – Present</span>
         </div>
         <div class="entry-sub">
           <span class="entry-role">Ph.D. in Computer Science, School of Computing</span>
           <span class="entry-place">Daejeon, Republic of Korea</span>
         </div>
         <ul class="bullets">
-          <li>Advised by Prof. Jaehyuk Huh at the <a href="https://casyslab.kaist.ac.kr/">Computer Architecture and Systems Lab (CASYS)</a></li>
-          <li><mark class="todo">TODO: 장학금 등 (없으면 삭제)</mark></li>
+          <li>Advised by Prof. Jaehyuk Huh</a></li>
         </ul>
       </div>
 
-      <!-- TODO: 석사가 따로 있으면 위 entry 블록 복사해서 추가 -->
+      
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Korea Advanced Institute of Science and Technology (KAIST)</span>
+          <span class="entry-date">Mar. 2022</mark> – Feb. 2024</span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-role">M.S. in Computer Science, School of Computing</span>
+          <span class="entry-place">Daejeon, Republic of Korea</span>
+        </div>
+        <ul class="bullets">
+          <li>Advised by Prof. Jaehyuk Huh</a></li>
+        </ul>
+      </div>
 
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-title"><mark class="todo">TODO: 학부 학교명</mark></span>
-          <span class="entry-date"><mark class="todo">TODO: 기간</mark></span>
+          <span class="entry-title">Yonsei University</mark></span>
+          <span class="entry-date">Mar. 2016</mark> – Feb. 2022</span>
         </div>
         <div class="entry-sub">
-          <span class="entry-role">B.S. in <mark class="todo">TODO: 전공</mark></span>
-          <span class="entry-place"><mark class="todo">TODO: 도시</mark>, Republic of Korea</span>
+          <span class="entry-role">B.S. in Electrical and Electronic Engineering</mark></span>
+          <span class="entry-place">Seoul, Republic of Korea</span>
         </div>
         <ul class="bullets">
-          <li><mark class="todo">TODO: GPA, 수상, 졸업 프로젝트 등 (선택)</mark></li>
+          <li>Summa Cum Laude (Top 1% in School of Engineering)</mark></li>
+          <li>Completed two years of mandatory military service</mark></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ PUBLICATIONS ============ -->
-    <section id="publications" class="section">
+
+    
+        <section id="publications" class="section">
       <h2>Publications</h2>
       <!-- 새 논문은 accept 후 맨 위에 추가 (최신순) -->
       <ol class="pub-list">
+        <li class="pub">
+          <div class="pub-title">
+            NEST: Multi-Tenant Tiered Memory Management with Near Memory Demand Estimation
+          </div>
+          <div class="pub-venue">IEEE International Symposium on High-Performance Computer Architecture (HPCA), 2027
+          </div>
+          <div class="pub-authors"><strong>Kwanghoon Choi</strong>, Igjae Kim, Hongjin Kim, Suhwan Kim, and Jaehyuk Huh</div>
+        </li>
+        <li class="pub">
+          <div class="pub-title">
+            SecPIMlet: Confidential Computing for Spatio-temporally Shared Processing-in-Memory
+            <!-- TODO: DOI 나오면 [paper] 링크 추가 -->
+          </div>
+          <div class="pub-venue">IEEE/ACM International Symposium on Microarchitecture (MICRO), 2026
+            <span class="pub-badge">★ Best Paper Nominee</span>
+          </div>
+          <div class="pub-authors">Sunho Lee, Minwoo Noh, Jeongwon Choi, <strong>Kwanghoon Choi</strong>, Igjae Kim, Chang Hyun Park, and Jaehyuk Huh</div>
+        </li>
+        <li class="pub">
+          <div class="pub-title">
+            Adaptive Parallel Monte Carlo Tree Search for Efficient Test-time Compute Scaling
+            <a class="pub-link" href="https://arxiv.org/abs/2604.00510">[arXiv]</a>
+          </div>
+          <div class="pub-venue">arXiv preprint arXiv:2604.00510</div>
+          <div class="pub-authors">Hongbeen Kim, Juhyun Lee, Sanghyeon Lee, <strong>Kwanghoon Choi</strong>, and Jaehyuk Huh</div>
+        </li>
+        <li class="pub">
+          <div class="pub-title">
+            Adaptive Migration Decision for Multi-Tenant Memory Systems
+            <a class="pub-link" href="https://arxiv.org/abs/2505.09164">[arXiv]</a>
+          </div>
+          <div class="pub-venue">arXiv preprint arXiv:2505.09164</div>
+          <div class="pub-authors">Hyungjun Cho, Igjae Kim, <strong>Kwanghoon Choi</strong>, Hongjin Kim, Wonjae Lee, Junhyeok Im, Jinin So, and Jaehyuk Huh</div>
+        </li>
         <li class="pub">
           <div class="pub-title">
             ShieldCXL: A Practical Obliviousness Support with Sealed CXL Memory
             <a class="pub-link" href="https://doi.org/10.1145/3703354">[paper]</a>
             <a class="pub-link" href="https://jaehyuk-huh.github.io/slides/TACO2025_shieldCXL_slide.pdf">[slides]</a>
           </div>
-          <div class="pub-authors"><strong>Kwanghoon Choi</strong>, Igjae Kim, Sunho Lee, and Jaehyuk Huh</div>
           <div class="pub-venue">ACM Transactions on Architecture and Code Optimization (TACO), Vol. 22, No. 1, 2025</div>
-          <details class="pub-details">
-            <summary>Paper summary</summary>
-            <div class="pub-summary">
-              <!-- TODO: 초안. 2~3문장으로 정확하게 다듬기 -->
-              <p><span class="pub-label">Summary.</span>
-                ShieldCXL is a secure memory architecture that builds on sealed CXL memory to provide
-                confidentiality, integrity, replay protection, and access-pattern obliviousness with
-                practical overhead.
-                <mark class="todo">TODO: 핵심 아이디어와 결과 한 줄 추가</mark>
-              </p>
-            </div>
-          </details>
+          <div class="pub-authors"><strong>Kwanghoon Choi</strong>, Igjae Kim, Sunho Lee, and Jaehyuk Huh</div>
+        </li>
+        <li class="pub">
+          <div class="pub-title">
+            Interference-Aware DNN Serving on Heterogeneous Processors in Edge Systems
+            <a class="pub-link" href="https://jeongseob.github.io/assets/papers/kim_iccd24.pdf">[paper]</a>
+            <a class="pub-link" href="https://jaehyuk-huh.github.io/slides/iccd2024_Interference_Aware_Serving.pdf">[slides]</a>
+          </div>
+          <div class="pub-venue">IEEE International Conference on Computer Design (ICCD), 2024</div>
+          <div class="pub-authors">Yeonjae Kim, Igjae Kim, <strong>Kwanghoon Choi</strong>, Jeongseob Ahn, Jongse Park, and Jaehyuk Huh</div>
         </li>
       </ol>
     </section>
 
+
     <!-- ============ PATENTS ============ -->
-    <section id="patents" class="section">
+    <!-- <section id="patents" class="section">
       <h2>Patents</h2>
       <ol class="pub-list">
         <li class="pub">
@@ -147,11 +189,11 @@
           <div class="pub-venue">Korean Patent Application No. <mark class="todo">TODO: 10-20XX-XXXXXXX</mark>, filed <mark class="todo">TODO: Jun. 2026</mark></div>
         </li>
       </ol>
-    </section>
+    </section> -->
 
     <!-- ============ PROJECTS ============ -->
     <!-- TODO: 참여 과제나 사이드 프로젝트가 없으면 이 섹션과 nav의 Projects 링크 삭제 -->
-    <section id="projects" class="section">
+    <!-- <section id="projects" class="section">
       <h2>Projects</h2>
       <ol class="pub-list">
         <li class="pub">
@@ -164,55 +206,72 @@
           </details>
         </li>
       </ol>
-    </section>
+    </section> -->
 
-    <!-- ============ EXPERIENCE ============ -->
     <section id="experience" class="section">
       <h2>Experience</h2>
 
-      <!-- 아래 entry 블록을 복사해서 최신순으로 추가 (인턴, TA, RA 등) -->
+      <!-- 아래 entry 블록을 복사해서 최신순으로 추가 -->
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-title"><mark class="todo">TODO: 기관/회사</mark></span>
-          <span class="entry-date"><mark class="todo">TODO: 기간</mark></span>
+          <span class="entry-title">Microsoft Research Asia</span>
+          <span class="entry-date">Jan. 2026 – Jun. 2026</span>
         </div>
         <div class="entry-sub">
-          <span class="entry-role"><mark class="todo">TODO: 직무</mark></span>
-          <span class="entry-place"><mark class="todo">TODO: 지역</mark></span>
+          <span class="entry-role">MSRA (Shanghai) System and Engineering Group</span>
+          <span class="entry-place">Shanghai, China</span>
         </div>
-        <details class="pub-details">
-          <summary>Experience summary</summary>
-          <ul class="bullets">
-            <li><mark class="todo">TODO: 한 일 1~3줄</mark></li>
-          </ul>
-        </details>
+        <div class="entry-meta">Mentor: Yuge Zhang</div>
+        <div class="entry-project">Agent Lightning: Seamless Training Framework for AI Agents</div>
+        <ul class="bullets">
+          <li>Feedback-driven training for multi-turn AI agents</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Seoul National University</span>
+          <span class="entry-date">Jun. 2021 – Aug. 2021</span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-role">Architecture and Code Optimization Lab (ARC Lab)</span>
+          <span class="entry-place">Seoul, Republic of Korea</span>
+        </div>
+        <div class="entry-meta">Advisor: Prof. Jaewook Lee</div>
+        <div class="entry-project">Tape-out of <em>A Case for Hardware-based Demand Paging (ISCA 2020)</em></div>
+        <ul class="bullets">
+          <li>OS–hardware integration for FPGA prototyping on Rocket Core</li>        </ul>
       </div>
     </section>
 
-    <!-- ============ AWARDS ============ -->
-    <section id="awards" class="section">
+        <section id="awards" class="section">
       <h2>Awards &amp; Honors</h2>
-
-      <div class="award-group">
-        <h3>Awards</h3>
-        <ul class="bullets">
-          <li><mark class="todo">TODO: 수상명, 기관 (연도)</mark></li>
-        </ul>
-      </div>
-
-      <div class="award-group">
-        <h3>Teaching</h3>
-        <ul class="bullets">
-          <li><mark class="todo">TODO: TA 과목, KAIST (학기) — 없으면 그룹 삭제</mark></li>
-        </ul>
-      </div>
+      <ul class="bullets">
+        <li><strong>National Scholarship</strong>, KAIST, 2022 – 2026</li>
+        <li><strong>National Science &amp; Technology Scholarship</strong>, Korea Student Aid Foundation, 2020 – 2021</li>
+        <li><strong>Dean's List</strong>, Yonsei University, 2016 – 2017, 2020 – 2021</li>
+        <li><strong>Academic Excellence Scholarship</strong>, Yonsei University, Spring &amp; Fall 2017</li>
+      </ul>
     </section>
+
+    <!-- ============ TEACHING ============ -->
+    <section id="teaching" class="section">
+      <h2>Teaching Experiences</h2>
+      <h3>Teaching Assistant, KAIST</h3>
+      <ul class="term-list">
+        <li><span>CS230 System Programming</span><span class="term">Fall 2025, Fall 2022</span></li>
+        <li><span>CS311 Computer Organization</span><span class="term">Spring 2025, Spring 2023</span></li>
+        <li><span>CS510 Computer Architecture</span><span class="term">Spring 2024</span></li>
+        <li><span>Counseling for CS Students</span><span class="term">Fall 2024</span></li>
+      </ul>
+    </section>
+
 
   </main>
 
   <footer class="site-footer">
     © 2026 Kwanghoon Choi
-    <span class="dot">·</span> <a href="mailto:khoonchoi@kaist.ac.kr">khoonchoi@kaist.ac.kr</a>
+    <span class="dot">·</span> <a href="mailto:khchoi@casys.kaist.ac.kr">khchoi@casys.kaist.ac.kr</a>
     <span class="dot">·</span> <a href="assets/cv.pdf">CV</a>
   </footer>
 
