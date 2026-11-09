@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kwanghoon Choi</title>
+  <!-- TODO: description 한 줄 다듬기 -->
+  <meta name="description" content="Kwanghoon Choi, Ph.D. student at KAIST working on CXL-based memory systems and secure memory architecture.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- TODO(선택): favicon 추가 → <link rel="icon" href="assets/img/favicon.png"> -->
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Kwanghoon Choi</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="is-current">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top" class="container">
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <!-- TODO: 프로필 사진을 assets/img/profile.jpg 로 넣고 src 변경 (정사각형, 400px 이상 권장) -->
+      <img class="hero-photo" src="assets/img/profile.svg" alt="Kwanghoon Choi">
+      <div class="hero-body">
+        <h1 class="hero-name">Kwanghoon Choi</h1>
+        <p class="hero-role">
+          Ph.D. Student, School of Computing, KAIST
+          <span class="dot">·</span>
+          <a href="https://casyslab.kaist.ac.kr/">CASYS Lab</a>
+        </p>
+        <ul class="contact">
+          <li><a href="mailto:khoonchoi@kaist.ac.kr">khoonchoi@kaist.ac.kr</a></li>
+          <li><a href="#" class="todo-link">Google Scholar</a></li><!-- TODO: Scholar URL -->
+          <li><a href="#" class="todo-link">LinkedIn</a></li><!-- TODO: LinkedIn URL (없으면 삭제) -->
+          <li><a href="https://github.com/Kwanghoon-Choi">GitHub</a></li>
+          <li><a href="assets/cv.pdf" class="todo-link">CV</a></li><!-- TODO: assets/cv.pdf 업로드 -->
+        </ul>
+      </div>
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <!-- TODO: bio 초안. 학년/입학 시기, 연구 한 줄 요약을 본인 표현으로 다듬기 -->
+      <p>
+        I am a Ph.D. student in the <a href="https://cs.kaist.ac.kr/">School of Computing at KAIST</a>,
+        advised by Prof. <a href="https://jaehyuk-huh.github.io/">Jaehyuk Huh</a> at the
+        <a href="https://casyslab.kaist.ac.kr/">Computer Architecture and Systems Lab (CASYS)</a>.
+        My research focuses on memory systems for data centers, with an emphasis on
+        CXL-based tiered memory and secure memory architecture.
+        <mark class="todo">TODO: 학부/석사 이력 한 문장 + bio 다듬기</mark>
+      </p>
+
+      <h3>Research Interests</h3>
+      <!-- TODO: 초안 4개. 3~4개로 확정 -->
+      <ul class="interests">
+        <li>CXL-based Tiered and Disaggregated Memory Systems</li>
+        <li>Memory Management for Multi-tenant Systems</li>
+        <li>Secure Memory Architecture</li>
+        <li>Processing-in/near-Memory</li>
+      </ul>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Korea Advanced Institute of Science and Technology (KAIST)</span>
+          <span class="entry-date"><mark class="todo">TODO: Mar. 20XX</mark> – Present</span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-role">Ph.D. in Computer Science, School of Computing</span>
+          <span class="entry-place">Daejeon, Republic of Korea</span>
+        </div>
+        <ul class="bullets">
+          <li>Advised by Prof. Jaehyuk Huh at the <a href="https://casyslab.kaist.ac.kr/">Computer Architecture and Systems Lab (CASYS)</a></li>
+          <li><mark class="todo">TODO: 장학금 등 (없으면 삭제)</mark></li>
+        </ul>
+      </div>
+
+      <!-- TODO: 석사가 따로 있으면 위 entry 블록 복사해서 추가 -->
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><mark class="todo">TODO: 학부 학교명</mark></span>
+          <span class="entry-date"><mark class="todo">TODO: 기간</mark></span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-role">B.S. in <mark class="todo">TODO: 전공</mark></span>
+          <span class="entry-place"><mark class="todo">TODO: 도시</mark>, Republic of Korea</span>
+        </div>
+        <ul class="bullets">
+          <li><mark class="todo">TODO: GPA, 수상, 졸업 프로젝트 등 (선택)</mark></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <!-- 새 논문은 accept 후 맨 위에 추가 (최신순) -->
+      <ol class="pub-list">
+        <li class="pub">
+          <div class="pub-title">
+            ShieldCXL: A Practical Obliviousness Support with Sealed CXL Memory
+            <a class="pub-link" href="https://doi.org/10.1145/3703354">[paper]</a>
+            <a class="pub-link" href="https://jaehyuk-huh.github.io/slides/TACO2025_shieldCXL_slide.pdf">[slides]</a>
+          </div>
+          <div class="pub-authors"><strong>Kwanghoon Choi</strong>, Igjae Kim, Sunho Lee, and Jaehyuk Huh</div>
+          <div class="pub-venue">ACM Transactions on Architecture and Code Optimization (TACO), Vol. 22, No. 1, 2025</div>
+          <details class="pub-details">
+            <summary>Paper summary</summary>
+            <div class="pub-summary">
+              <!-- TODO: 초안. 2~3문장으로 정확하게 다듬기 -->
+              <p><span class="pub-label">Summary.</span>
+                ShieldCXL is a secure memory architecture that builds on sealed CXL memory to provide
+                confidentiality, integrity, replay protection, and access-pattern obliviousness with
+                practical overhead.
+                <mark class="todo">TODO: 핵심 아이디어와 결과 한 줄 추가</mark>
+              </p>
+            </div>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PATENTS ============ -->
+    <section id="patents" class="section">
+      <h2>Patents</h2>
+      <ol class="pub-list">
+        <li class="pub">
+          <div class="pub-title"><mark class="todo">TODO: 특허 제목 (영문)</mark></div>
+          <div class="pub-authors"><strong>Kwanghoon Choi</strong>, <mark class="todo">TODO: 공동 발명자</mark></div>
+          <div class="pub-venue">Korean Patent Application No. <mark class="todo">TODO: 10-20XX-XXXXXXX</mark>, filed <mark class="todo">TODO: Jun. 2026</mark></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <!-- TODO: 참여 과제나 사이드 프로젝트가 없으면 이 섹션과 nav의 Projects 링크 삭제 -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ol class="pub-list">
+        <li class="pub">
+          <div class="pub-title"><mark class="todo">TODO: 과제/프로젝트명</mark></div>
+          <div class="pub-authors"><mark class="todo">TODO: 역할, 지원 기관</mark></div>
+          <div class="pub-venue"><mark class="todo">TODO: 기간</mark></div>
+          <details class="pub-details">
+            <summary>Project summary</summary>
+            <div class="pub-summary"><p><mark class="todo">TODO: 2~3문장 요약</mark></p></div>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <!-- 아래 entry 블록을 복사해서 최신순으로 추가 (인턴, TA, RA 등) -->
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title"><mark class="todo">TODO: 기관/회사</mark></span>
+          <span class="entry-date"><mark class="todo">TODO: 기간</mark></span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-role"><mark class="todo">TODO: 직무</mark></span>
+          <span class="entry-place"><mark class="todo">TODO: 지역</mark></span>
+        </div>
+        <details class="pub-details">
+          <summary>Experience summary</summary>
+          <ul class="bullets">
+            <li><mark class="todo">TODO: 한 일 1~3줄</mark></li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ AWARDS ============ -->
+    <section id="awards" class="section">
+      <h2>Awards &amp; Honors</h2>
+
+      <div class="award-group">
+        <h3>Awards</h3>
+        <ul class="bullets">
+          <li><mark class="todo">TODO: 수상명, 기관 (연도)</mark></li>
+        </ul>
+      </div>
+
+      <div class="award-group">
+        <h3>Teaching</h3>
+        <ul class="bullets">
+          <li><mark class="todo">TODO: TA 과목, KAIST (학기) — 없으면 그룹 삭제</mark></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Kwanghoon Choi
+    <span class="dot">·</span> <a href="mailto:khoonchoi@kaist.ac.kr">khoonchoi@kaist.ac.kr</a>
+    <span class="dot">·</span> <a href="assets/cv.pdf">CV</a>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
